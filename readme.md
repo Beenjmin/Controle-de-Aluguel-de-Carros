@@ -5,7 +5,7 @@ O objetivo do projeto é criar um algoritmo cujo a sua funcionalidade seja admin
 **Integrantes da equipe:**  
 projeto é feito com os seguintes membros:  
 1. Anna Carolyna;
-2. Antonio Uriel;
+2. Antonio Uriel (@uriel-ewerton);
 3. Benjamin Marcos (@Beenjmin);
 4. Bruna Saraiva (@bruna-saraiva);
 5. Ramon Moreira (@RamonRMN);
