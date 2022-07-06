@@ -1,47 +1,74 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-  struct ficha                        //struct de nome ficha com só uma das características
+
+  struct ficha                        //struct de nome ficha com sÃ³ uma das caracterÃ­sticas
     {
         char marca[30], modelo[30], combustivel[30], arcon[30];
+    }carro[2];                          //variÃ¡vel, no caso um vetor, com 3(?) carros
+
+  struct ficha                        //struct de nome ficha com só uma das características
+    {
+        char marca[30];
     }carro[2];                          //variável, no caso um vetor, com 3(?) carros
+
 
 
 
 int main()
 {
 
+
     //char fiat[6]= "fiat",toyota[15]= "toyota";
     //int opcao_marca=0;
+
+    char fiat[6]= "fiat",toyota[15]= "toyota";
+    int opcao_marca=0;
+
 
     marca ();
 
 }
 
+
 //----------------------------------------------------------------------------------------------------------------------------------
+
 
 
 int marca ()
 {
 
 
+
     char fiat[6]= "Fiat",toyota[15]= "Toyota";
     int opcao_marca=0;
 
     printf("Escolha a marca do carro:\n1-Fiat\n2-Toyota\n3-Ford\n>");
+
+    char fiat[6]= "fiat",toyota[15]= "toyota";
+    int opcao_marca=0;
+
+    printf("Selecione 1 para fiat e 2 para toyota");
+
     scanf("%d",&opcao_marca);
 
    switch(opcao_marca){
     case 1:
-        for(int i=0;i<=6;i++)                  //loop que coloca um texto que está dentro de um vetor dentro da "posição" marca dentro do struct carro(nesse carro o primeiro do vetor)
+
+        for(int i=0;i<=6;i++)                  //loop que coloca um texto que estÃ¡ dentro de um vetor dentro da "posiÃ§Ã£o" marca dentro do struct carro(nesse carro o primeiro do vetor)
             carro[0].marca[i]=fiat[i];
             modelo(); //aqui ha um problema: preciso criar uma funcao modelo pra cada marca
             combustivel();
             ar();
+
+        for(int i=0;i<=6;i++)                  //loop que coloca um texto que está dentro de um vetor dentro da "posição" marca dentro do struct carro(nesse carro o primeiro do vetor)
+            carro[0].marca[i]=fiat[i];
+
     break;
     case 2:
         for(int i=0;i<=6;i++)
             carro[0].marca[i]= toyota[i];
+
             combustivel();
             ar();
     break;
@@ -127,5 +154,10 @@ void ar()
                  else
                     printf("dado invalido");
 
+
+
+    break;
+    }
+    printf("%s",carro[0].marca);
 
 }
